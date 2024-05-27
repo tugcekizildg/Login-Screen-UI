@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E7C8B7;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .login-section {
+    width: 90%;
+    max-width: 700px;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: #fff;
+    display: flex;
+    gap: 2rem;
+    box-shadow: 0 1rem 1.5rem #fae1f0;
+  }
+  
+  img {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    object-fit: cover;
+    width: 50%;
+  }
+  
+  .form-section {
+    width: 100%;
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  legend {
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  form {
+    margin-bottom: 3rem;
+  }
+  
+  form p {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  form p label {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  form p input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background: #fffbfb;
+    border: 1.5px solid #72727213;
+    border-radius: 0.5rem;
+    outline: none;
+  }
+  
+  .buttons-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .buttons-section p {
+    color: #727272;
+    font-size: 0.8rem;
+  }
+  
+  .or{
+    text-align: center;
+  }
+  button {
+    width: 100%;
+    border-radius: 0.25rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.5s;
+  }
+  
+  .submit {
+    background: #D19181;
+    box-shadow: 0 0.5rem 1rem #f6e4c8;
+    padding: 0.75rem 1rem;
+  }
+  
+  .submit:hover {
+    background: #d19181c2;
+  }
+  
+  .linkedin-btn {
+    background: #0f64c2;
+    box-shadow: 0 0.5rem 1rem #c9d8ef;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .linkedin-btn:hover {
+    background: #0f63c2cb;
+  }
+  
+  ::placeholder {
+    color: #727272;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .dot {
+    border-radius: 50%;
+    width: 0.175rem;
+    height: 0.175rem;
+    background: #000;
+    opacity:0.8;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: #0f64c2;
+  }
+  a:hover{
+    opacity: 0.7;
+  }
+  
+  @media (max-width: 600px) {
+    .login-section {
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 3rem 0;
+      font-size: 1.2rem;
+    }
+    
+    img {
+        display: none;
+      
+    }
+  
+    .buttons-section {
+      align-items: center;
+    }
+  }
